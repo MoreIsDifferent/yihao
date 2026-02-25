@@ -1,15 +1,18 @@
 {
-  "name": "elena-zhang-cv",
+  "name": "yi-hao-cv",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --hostname 127.0.0.1 --webpack",
     "build": "next build",
+    "export": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "framer-motion": "^12.34.1",
     "next": "16.1.6",
+    "puppeteer": "^24.37.3",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
