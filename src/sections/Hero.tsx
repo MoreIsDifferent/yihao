@@ -83,7 +83,7 @@ export function Hero() {
               className="mt-8 flex flex-wrap items-center gap-3"
             >
               <a
-                href={profile.cvFile}
+                href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${profile.cvFile}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-2.5 text-sm font-medium text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
@@ -106,7 +106,7 @@ export function Hero() {
             <div className="relative">
               <div className="h-64 w-64 overflow-hidden rounded-2xl border-2 border-[var(--border)] bg-[var(--card-bg)] shadow-lg sm:h-72 sm:w-72">
                 <img
-                  src={profile.portrait}
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${profile.portrait}`}
                   alt={profile.name}
                   className="h-full w-full object-cover"
                 />
