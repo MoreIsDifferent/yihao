@@ -10,7 +10,7 @@ export const siteData: SiteData = {
     location: "Chapel Hill, North Carolina, USA",
     email: "yhao11@unc.edu",
     bio: "Yi Hao is a PhD student in Strategy and Entrepreneurship at the University of North Carolina at Chapel Hill. Her research interests include organizational learning, evaluation, R&D, and technology adoption. She examines how digitalization and institutional environments shape firm strategy using econometric analysis, network modeling, and computational text methods. Her work has been presented at the Academy of Management Annual Meeting and recognized with multiple scholarships and research awards. Reach her at yhao11@unc.edu or Yi_Hao@kenan-flagler.unc.edu.",
-    portrait: "/portrait.jpg",
+    portrait: "/Portrait.jpg",
     cvFile: "/YiHao_CV.pdf",
   },
   researchInterests: [
