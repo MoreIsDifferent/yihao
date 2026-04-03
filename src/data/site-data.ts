@@ -3,7 +3,7 @@ import { SiteData } from "@/types";
 export const siteData: SiteData = {
   profile: {
     name: "Yi Hao",
-    field: "PhD Student in Strategy & Entrepreneurship",
+    field: "PhD Student", // 颜色使用主题模板下统一的蓝色
     institution: "UNC at Chapel Hill",
     department: "Strategy & Entrepreneurship @ Kenan-Flagler Business School",
     location: "Chapel Hill, North Carolina, USA",
