@@ -3,13 +3,12 @@ import { SiteData } from "@/types";
 export const siteData: SiteData = {
   profile: {
     name: "Yi Hao",
-    role: "PhD Student",
-    field: "Strategy & Entrepreneurship",
-    institution: "University of North Carolina at Chapel Hill",
-    department: "Strategy & Entrepreneurship",
+    field: "PhD Student in Strategy & Entrepreneurship",
+    institution: "UNC at Chapel Hill",
+    department: "Strategy & Entrepreneurship @ Kenan-Flagler Business School",
     location: "Chapel Hill, North Carolina, USA",
     email: "yhao11@unc.edu",
-    bio: "Yi Hao is a PhD student in Strategy and Entrepreneurship at the University of North Carolina at Chapel Hill. Her research interests include organizational learning, category and evaluation, venture capital, and bio tech. Her work has been presented at the Academy of Management Annual Meeting. ",
+    bio: "Yi Hao is a PhD student in Strategy and Entrepreneurship at the University of North Carolina at Chapel Hill. Her research interests include Organizational Learning, Category and Evaluation, Venture Capital, and Bio Tech. Her work has been presented at the Academy of Management Annual Meeting. ",
     portrait: "/portrait.jpg",
     cvFile: "/YiHao_CV.pdf",
   },

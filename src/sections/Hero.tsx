@@ -31,12 +31,14 @@ export function Hero() {
           className="grid items-center gap-8 lg:gap-12 lg:grid-cols-5"
         >
           <div className="lg:col-span-3">
-            <motion.p
-              variants={fadeUp}
-              className="text-sm font-medium uppercase tracking-widest text-accent"
-            >
-              {profile.role}
-            </motion.p>
+            {profile.role ? (
+              <motion.p
+                variants={fadeUp}
+                className="text-sm font-medium uppercase tracking-widest text-accent"
+              >
+                {profile.role}
+              </motion.p>
+            ) : null}
 
             <motion.h1
               variants={fadeUp}
@@ -47,7 +49,7 @@ export function Hero() {
 
             <motion.p
               variants={fadeUp}
-              className="mt-3 text-lg text-[var(--text-secondary)] sm:text-xl"
+              className="mt-3 text-lg font-medium text-blue-600 sm:text-xl dark:text-blue-400"
             >
               {profile.field}
             </motion.p>

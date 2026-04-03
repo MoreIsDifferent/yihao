@@ -1,6 +1,7 @@
 export interface Profile {
   name: string;
-  role: string;
+  /** Small uppercase line above the name; omit to hide */
+  role?: string;
   field: string;
   institution: string;
   department: string;
