@@ -58,7 +58,13 @@ export function Hero() {
               variants={fadeUp}
               className="mt-1 text-base text-[var(--text-secondary)]"
             >
-              {profile.department}, {profile.institution}
+              {profile.department}
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              className="mt-0.5 text-base text-[var(--text-secondary)]"
+            >
+              {profile.institution}
             </motion.p>
 
             <motion.div
