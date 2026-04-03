@@ -49,7 +49,7 @@ export function Hero() {
 
             <motion.p
               variants={fadeUp}
-              className="mt-3 text-lg font-medium text-blue-600 sm:text-xl dark:text-blue-400"
+              className="mt-3 text-lg font-medium text-accent sm:text-xl"
             >
               {profile.field}
             </motion.p>
