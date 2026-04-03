@@ -9,15 +9,15 @@ export const siteData: SiteData = {
     department: "Strategy & Entrepreneurship",
     location: "Chapel Hill, North Carolina, USA",
     email: "yhao11@unc.edu",
-    bio: "Yi Hao is a PhD student in Strategy and Entrepreneurship at the University of North Carolina at Chapel Hill. Her research interests include organizational learning, evaluation, R&D, and technology adoption. She examines how digitalization and institutional environments shape firm strategy using econometric analysis, network modeling, and computational text methods. Her work has been presented at the Academy of Management Annual Meeting and recognized with multiple scholarships and research awards. Reach her at yhao11@unc.edu or Yi_Hao@kenan-flagler.unc.edu.",
+    bio: "Yi Hao is a PhD student in Strategy and Entrepreneurship at the University of North Carolina at Chapel Hill. Her research interests include organizational learning, category and evaluation, venture capital, and bio tech. Her work has been presented at the Academy of Management Annual Meeting. ",
     portrait: "/portrait.jpg",
     cvFile: "/YiHao_CV.pdf",
   },
   researchInterests: [
     "Organizational Learning",
-    "Evaluation",
-    "R&D",
-    "Tech Adoption",
+    "Category and Evaluation",
+    "Venture Capital",
+    "Bio Tech",
   ],
   education: [
     {
@@ -30,13 +30,13 @@ export const siteData: SiteData = {
       degree: "MSc",
       field: "Management Science",
       institution: "Tongji University",
-      years: "Sep. 2022 – June 2025",
+      years: "2025",
     },
     {
       degree: "BA",
       field: "Economics",
       institution: "Sichuan University",
-      years: "Sep. 2015 – June 2019",
+      years: "2019",
     },
   ],
   publications: [
@@ -92,11 +92,7 @@ export const siteData: SiteData = {
     },
     {
       category: "Methods",
-      items: ["Econometrics", "Network Analysis", "Text Analysis", "Multivariate Statistics"],
-    },
-    {
-      category: "Tools",
-      items: ["LaTeX", "Web Scraping"],
+      items: ["Econometrics", "Network Analysis", "Text Analysis"],
     },
   ],
   service: [
@@ -186,19 +182,21 @@ export const siteData: SiteData = {
   meta: {
     title: "Yi Hao | PhD Student – Strategy & Entrepreneurship, UNC Chapel Hill",
     description:
-      "Yi Hao is a PhD student in Strategy and Entrepreneurship at the University of North Carolina at Chapel Hill. Her research focuses on organizational learning, evaluation, R&D, and technology adoption.",
+      "Yi Hao is a PhD student in Strategy and Entrepreneurship at the University of North Carolina at Chapel Hill. Her research focuses on organizational learning, category and evaluation, venture capital, and bio tech.",
     keywords: [
       "Yi Hao",
       "UNC Chapel Hill",
       "strategy",
       "entrepreneurship",
-      "technology adoption",
-      "R&D",
+      "organizational learning",
+      "category",
       "evaluation",
+      "venture capital",
+      "bio tech",
       "digitalization",
       "Academy of Management",
     ],
-    url: "https://yihao.vercel.app",
+    url: "https://moreisdifferent.github.io/yihao/",
   },
 };
 
