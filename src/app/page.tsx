@@ -5,12 +5,10 @@ import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Divider } from "@/components/Divider";
 import { Hero } from "@/sections/Hero";
-import { About } from "@/sections/About";
 import { Research } from "@/sections/Research";
 import { Education } from "@/sections/Education";
 import { Publications } from "@/sections/Publications";
 import { Projects } from "@/sections/Projects";
-import { Skills } from "@/sections/Skills";
 import { Service } from "@/sections/Service";
 import { Awards } from "@/sections/Awards";
 import { Experience } from "@/sections/Experience";
@@ -24,17 +22,13 @@ export default function Home() {
       <main>
         <Hero />
         <Divider />
-        <About />
-        <Divider />
         <Research />
         <Divider />
         <Education />
         <Divider />
-        <Publications />
-        <Divider />
         <Projects />
         <Divider />
-        <Skills />
+        <Publications />
         <Divider />
         <Service />
         <Divider />

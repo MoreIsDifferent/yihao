@@ -33,7 +33,7 @@ export function Navbar() {
       { rootMargin: "-20% 0px -70% 0px" }
     );
 
-    navItems.forEach((item) => {
+    navItems.filter((item) => item.href.startsWith("#")).forEach((item) => {
       const el = document.querySelector(item.href);
       if (el) observer.observe(el);
     });
@@ -43,10 +43,18 @@ export function Navbar() {
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
+    if (!href.startsWith("#")) {
+      window.location.href = href;
+      return;
+    }
+
     const el = document.querySelector(href);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
+      return;
     }
+
+    window.location.href = `/${href}`;
   };
 
   return (

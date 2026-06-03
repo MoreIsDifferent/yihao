@@ -1,10 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
 import { SectionHeader } from "@/components/SectionHeader";
-import { ExternalLinkIcon } from "@/components/Icons";
 import { siteData } from "@/data/site-data";
 
 export function PMGallery() {
@@ -28,15 +28,13 @@ export function PMGallery() {
               {item.description}
             </p>
           )}
-          <a
+          <Link
             href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
             className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:underline"
           >
-            Visit
-            <ExternalLinkIcon className="w-4 h-4" />
-          </a>
+            Open page
+            <span aria-hidden="true">-&gt;</span>
+          </Link>
         </motion.div>
       </Container>
     </Section>

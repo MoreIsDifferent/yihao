@@ -30,7 +30,8 @@ export interface Publication {
 
 export interface Project {
   title: string;
-  description: string;
+  authors: string;
+  abstract: string;
   tags: string[];
 }
 

@@ -40,14 +40,6 @@ export const siteData: SiteData = {
   ],
   publications: [
     {
-      authors: "Hao, Y., & Wang, R.",
-      year: 2024,
-      title:
-        "The Impact of Digitalized Procurement on Supplier Selection: Evidence from Publicly Listed Firms in China",
-      venue: "Working Paper",
-      status: "In Progress",
-    },
-    {
       authors: "Gong, T., Li, J., Hao, Y., & Li, Y.",
       year: 2024,
       title:
@@ -66,22 +58,17 @@ export const siteData: SiteData = {
   ],
   projects: [
     {
-      title: "Digitalized Procurement and Supplier Selection",
-      description:
-        "Constructed a unique database by scraping publicly listed firm websites, analyzed panel data, and drafted manuscript.",
-      tags: ["Digitalization", "Supply Chain", "Panel Data"],
+      title:
+        "The Impact of Digitalized Procurement on Supplier Selection: Evidence from Publicly Listed Firms in China",
+      authors: "With Ruitong Wang",
+      abstract: "Abstract Coming Soon",
+      tags: ["Digitalized Procurement", "Supplier Selection"],
     },
     {
-      title: "Knowledge Diffusion in Supply Chain Networks",
-      description:
-        "Built supply chain networks, conducted text analysis on digital knowledge diffusion between partners, and analyzed dyad-year level data.",
-      tags: ["Network Analysis", "Text Analysis", "Supply Chain"],
-    },
-    {
-      title: "Institutional Fragility and Strategic Emphasis",
-      description:
-        "Investigated how institutional fragility and institutional development shape firms' relative strategic emphasis. Presented findings at multiple international conferences.",
-      tags: ["Institutions", "Strategy", "Emerging Markets"],
+      title: "Information Disclosure and Search Behavior",
+      authors: "With Isin Guler, Christine Choi",
+      abstract: "Abstract Coming Soon",
+      tags: ["Information Disclosure", "Search Behavior"],
     },
   ],
   skills: [
@@ -102,8 +89,16 @@ export const siteData: SiteData = {
   ],
   awards: [
     {
-      title: "Graduate Research Fund (¥12,000)",
+      title: "Outstanding Master's Thesis",
+      organization: "Tongji University, 2025",
+    },
+    {
+      title: "Graduate Research Fund",
       organization: "Tongji University, 2023",
+    },
+    {
+      title: "Excellent Social Practice Award",
+      organization: "Sichuan University, 2017",
     },
     {
       title: "Comprehensive Scholarship (Three Times)",
@@ -111,11 +106,7 @@ export const siteData: SiteData = {
     },
     {
       title: "Guo Moruo Scholarship (Top 1%)",
-      organization: "Sichuan University, 2015",
-    },
-    {
-      title: "Excellent Social Practice Award",
-      organization: "Sichuan University, 2017",
+      organization: "Leshan No.1 High School, 2015",
     },
   ],
   practiceExperience: [
@@ -153,12 +144,12 @@ export const siteData: SiteData = {
     {
       title: "Waffle Data",
       description: "Descriptive Results",
-      url: "https://sordid-elderberry-f9a.notion.site/Waffle-Data-2740eadb1ec680548f76e9bd70181619?pvs=74",
+      url: "/data",
     },
     {
       title: "PM Gallery",
       description: "Captured & Crafted",
-      url: "https://sordid-elderberry-f9a.notion.site/Art-Collection-3120eadb1ec68056ace9e393c07fccd0?pvs=73",
+      url: "/pm-gallery",
     },
   ],
   social: [
@@ -200,15 +191,13 @@ export const siteData: SiteData = {
 };
 
 export const navItems = [
-  { label: "About", href: "#about" },
   { label: "Research", href: "#research" },
   { label: "Education", href: "#education" },
   { label: "Publications", href: "#publications" },
   { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
   { label: "Service", href: "#service" },
   { label: "Awards", href: "#awards" },
   { label: "Experience", href: "#experience" },
-  { label: "Data", href: "#data-exploration" },
-  { label: "PM Gallery", href: "#pm-gallery" },
+  { label: "Data", href: "/data" },
+  { label: "PM Gallery", href: "/pm-gallery" },
 ];
