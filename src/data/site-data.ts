@@ -193,8 +193,8 @@ export const siteData: SiteData = {
 export const navItems = [
   { label: "Research", href: "#research" },
   { label: "Education", href: "#education" },
-  { label: "Publications", href: "#publications" },
   { label: "Projects", href: "#projects" },
+  { label: "Publications", href: "#publications" },
   { label: "Service", href: "#service" },
   { label: "Awards", href: "#awards" },
   { label: "Experience", href: "#experience" },
