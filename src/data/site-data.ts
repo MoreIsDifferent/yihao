@@ -148,7 +148,7 @@ export const siteData: SiteData = {
     },
     {
       title: "PM Gallery",
-      description: "Captured & Crafted",
+      description: "Captured & Crafted by Yi",
       url: "/pm-gallery",
     },
   ],

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { usePathname, useRouter } from "next/navigation";
 import { useTheme } from "./ThemeProvider";
 import { Container } from "./Container";
 import { MenuIcon, CloseIcon, SunIcon, MoonIcon } from "./Icons";
@@ -12,6 +13,8 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const { theme, toggleTheme } = useTheme();
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +47,7 @@ export function Navbar() {
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
     if (!href.startsWith("#")) {
-      window.location.href = href;
+      router.push(href);
       return;
     }
 
@@ -54,7 +57,17 @@ export function Navbar() {
       return;
     }
 
-    window.location.href = `/${href}`;
+    router.push(`/${href}`);
+  };
+
+  const handleBrandClick = () => {
+    setMobileOpen(false);
+    if (pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    router.push("/");
   };
 
   return (
@@ -72,7 +85,7 @@ export function Navbar() {
         <Container>
           <div className="flex h-16 items-center justify-between">
             <button
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              onClick={handleBrandClick}
               className="text-lg font-semibold tracking-tight text-[var(--text-primary)] transition-colors hover:text-accent"
             >
               Yi Hao
