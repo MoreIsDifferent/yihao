@@ -28,6 +28,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -41,6 +42,12 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
+        />
+        <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer={true} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.OneSignalDeferred=window.OneSignalDeferred||[];OneSignalDeferred.push(async function(OneSignal){await OneSignal.init({appId:"6e053ffd-ecb6-4a63-97ba-e2a56955b2cb",serviceWorkerPath:"${basePath}/OneSignalSDKWorker.js",serviceWorkerParam:{scope:"${basePath}/"}});});`,
+          }}
         />
       </head>
       <body className="min-h-screen bg-[var(--bg)] text-[var(--text-primary)] antialiased">
