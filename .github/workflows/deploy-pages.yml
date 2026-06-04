@@ -58,7 +58,7 @@ jobs:
         run: |
           curl -s -X POST "https://onesignal.com/api/v1/notifications" \
             -H "Content-Type: application/json" \
-            -H "Authorization: Basic ${{ secrets.ONESIGNAL_REST_API_KEY }}" \
+            -H "Authorization: Key ${{ secrets.ONESIGNAL_REST_API_KEY }}" \
             -d '{
               "app_id": "6e053ffd-ecb6-4a63-97ba-e2a56955b2cb",
               "included_segments": ["All"],
