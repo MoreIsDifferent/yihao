@@ -32,7 +32,7 @@ export function DataExploration() {
             href={item.url}
             className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:underline"
           >
-            Open page
+            Visit
             <span aria-hidden="true">-&gt;</span>
           </Link>
         </motion.div>
