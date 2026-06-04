@@ -46,7 +46,7 @@ export default function RootLayout({
         <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer={true} />
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.OneSignalDeferred=window.OneSignalDeferred||[];OneSignalDeferred.push(async function(OneSignal){await OneSignal.init({appId:"6e053ffd-ecb6-4a63-97ba-e2a56955b2cb",serviceWorkerPath:"${basePath}/OneSignalSDKWorker.js",serviceWorkerParam:{scope:"${basePath}/"}});});`,
+            __html: `window.OneSignalDeferred=window.OneSignalDeferred||[];OneSignalDeferred.push(async function(OneSignal){await OneSignal.init({appId:"6e053ffd-ecb6-4a63-97ba-e2a56955b2cb",serviceWorkerPath:"${basePath}/OneSignalSDKWorker.js",serviceWorkerParam:{scope:"${basePath}/"}});OneSignal.Slidedown.promptPush();});`,
           }}
         />
       </head>
